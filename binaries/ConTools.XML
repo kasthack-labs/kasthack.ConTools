@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ConTools</name>
+    </assembly>
+    <members>
+        <member name="M:kasthack.Tools.ConTools.Dump``1(``0)">
+            <summary>
+            Alias for Console.WriteLine(t). If passed argument is IEnumerable function also prints all members
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="t"></param>
+        </member>
+        <member name="M:kasthack.Tools.ConTools.ReadLine(System.String,System.Object,System.String,System.ConsoleColor,System.ConsoleColor)">
+            <summary>
+            Python like ReadLine with prompt
+            </summary>
+            <param name="str">Text to show</param>
+            <param name="prompt">Prompt string(default - ": ")</param>
+            <param name="bydefault">Value returned if user have just pressed enter</param>
+            <param name="foreColor">Text color(default - Yellow)</param>
+            <param name="backColor">BG color(default - Black)></param>
+            <returns></returns>
+        </member>
+        <member name="M:kasthack.Tools.ConTools.ReadInt(System.String,System.Nullable{System.Int32},System.String,System.ConsoleColor,System.ConsoleColor)">
+            <summary>
+            Python like ReadLine with prompt
+            </summary>
+            <param name="str">Text to show</param>
+            <param name="prompt">Prompt string(default - ": ")</param>
+            <param name="bydefault">Return value if empty</param>
+            <param name="foreColor">Text color(default - Yellow)</param>
+            <param name="backColor">BG color(default - Black)&gt;</param>
+            <exception cref="T:System.FormatException">thrown by int.Parse</exception>
+            <returns></returns>
+        </member>
+        <member name="M:kasthack.Tools.ConTools.ReadValidT``1(System.String,System.Func{``0,System.Boolean},System.String,System.String,System.ConsoleColor,System.ConsoleColor)">
+            <summary>
+            Read lines from console until user will input valid data
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="str">Text to show</param>
+            <param name="validator">validator</param>
+            <param name="errorMessage">message shown if it's impossible to parse T from input or validator returned false</param>
+            <param name="prompt">Prompt string(default - ": ")</param>
+            <returns>parsed value</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:kasthack.Tools.ConTools.ColorWrite(System.String,System.ConsoleColor,System.ConsoleColor,System.Boolean)" -->
+        <member name="M:kasthack.Tools.ConTools.ColorWriteLine(System.String,System.ConsoleColor,System.ConsoleColor)">
+            <summary>
+            Alias for ColorWrite with newline
+            </summary>
+            <param name="str">Text to show</param>
+            <param name="foreColor">Text color</param>
+            <param name="backColor">BG color</param>
+        </member>
+        <member name="M:kasthack.Tools.ConTools.WriteMessage(System.String,System.Boolean)">
+            <summary>
+            Alias for ColorWrite( str, Gray, Black )
+            </summary>
+            <param name="str">Text to show</param>
+            <param name="newline">Append newline to text</param>
+        </member>
+        <member name="M:kasthack.Tools.ConTools.WriteError(System.String,System.Boolean)">
+            <summary>
+            Alias for ColorWrite( str, Red, Black )
+            </summary>
+            <param name="str">Text to show</param>
+            <param name="newline">Append newline to text</param>
+        </member>
+        <member name="M:kasthack.Tools.ConTools.WriteQuestion(System.String,System.String,System.Boolean)">
+            <summary>
+            Alias for ColorWrite( str, Red, Black )
+            </summary>
+            <param name="str">Text to show</param>
+            <param name="prompt">Prompt string(default - ": ")</param>
+            <param name="newline">Append newline to text</param>
+        </member>
+    </members>
+</doc>
