@@ -3,7 +3,7 @@ ConTools
 
 Some stuff for System.Console
 
-* Dump(ext) - prints object.ToString and all it items(4 IEnumerable only) to Console
+* Dump(ext) - prints object.ToString and all it's items(IEnumerable only) to Console
 * ReadLine - python style readline
 * ReadInt - prompt user for int
 * WriteError - Print red text
