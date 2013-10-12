@@ -13,7 +13,7 @@ namespace kasthack.Tools
         /// <param name="t"></param>
         public static void Dump<T>( this T t ) {
             Console.WriteLine( t.ToString() );
-            if ( !( t is IEnumerable ) ) return;
+            if ( !( t is IEnumerable )||(t is string) ) return;
             foreach ( var v in t as IEnumerable )
                 if ( v != null )
                     v.Dump();
